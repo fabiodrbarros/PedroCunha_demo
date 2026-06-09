@@ -1,0 +1,56 @@
+# ─────────────────────────────────────────────────────────────
+#  Pedro Cunha Carpintaria — Docker Compose
+#
+#  Default: single container + SQLite, persisted on a named volume.
+#  For PostgreSQL in production, uncomment the `db` service below and
+#  switch the datasource provider in prisma/schema.prisma.
+# ─────────────────────────────────────────────────────────────
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        # Baked into the client bundle at build time.
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # SQLite database lives on the `database` volume.
+      DATABASE_URL: "file:/data/prod.db"
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      # IMPORTANT: in Compose, every "$" in the bcrypt hash must be doubled to "$$".
+      # Default below is the hash for the password "carpintaria2026" — CHANGE IT.
+      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH:-$$2a$$12$$Cmkf0BakLq5Cg0sB6Vg5pu5M2XWRsR2VnMWzQdQbCmrIuA/gBfOxG}
+      SESSION_SECRET: ${SESSION_SECRET:-change-this-to-a-long-random-string-in-production}
+      # SEED_ON_START: "true"   # seed demo content on first boot (needs dev deps)
+    volumes:
+      - database:/data
+      - uploads:/app/public/uploads
+
+  # ── PostgreSQL (production) ─────────────────────────────────
+  # 1. set provider = "postgresql" in prisma/schema.prisma
+  # 2. point DATABASE_URL at this service
+  # 3. uncomment the block below and the `depends_on` on `web`
+  #
+  # db:
+  #   image: postgres:16-alpine
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_USER: pedrocunha
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+  #     POSTGRES_DB: pedrocunha
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U pedrocunha"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 5
+
+volumes:
+  database:
+  uploads:
+  # pgdata:

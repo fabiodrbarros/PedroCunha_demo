@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "siteName": "Pedro Cunha Carpintaria",
+    "tagline": "Menuiserie d'auteur & mobilier sur mesure",
+    "description": "Atelier de menuiserie et de mobilier sur mesure. Détail, précision et qualité — des pièces dessinées et fabriquées avec rigueur pour l'architecture et les intérieurs.",
+    "ogAlt": "Pedro Cunha Carpintaria — mobilier sur mesure"
+  },
+  "nav": {
+    "home": "Accueil",
+    "catalog": "Catalogue",
+    "projects": "Projets",
+    "about": "À propos",
+    "materials": "Matériaux",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Langue"
+  },
+  "common": {
+    "viewAll": "Tout voir",
+    "viewMore": "Voir plus",
+    "discover": "Découvrir",
+    "readMore": "En savoir plus",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "loading": "Chargement",
+    "search": "Rechercher",
+    "filterAll": "Tous",
+    "sortBy": "Trier par",
+    "noResults": "Aucun résultat",
+    "noResultsHint": "Ajustez votre recherche ou vos filtres.",
+    "requestQuote": "Demander un devis",
+    "gallery": "Galerie",
+    "details": "Détails",
+    "category": "Catégorie",
+    "materials": "Matériaux",
+    "dimensions": "Dimensions",
+    "location": "Lieu",
+    "year": "Année",
+    "featured": "À la une",
+    "results": "{count, plural, =0 {Aucune pièce} =1 {# pièce} other {# pièces}}"
+  },
+  "hero": {
+    "eyebrow": "Menuiserie sur mesure",
+    "line1": "Détail.",
+    "line2": "Précision.",
+    "line3": "Qualité.",
+    "lead": "Mobilier sur mesure, dessiné et construit avec rigueur.",
+    "ctaPrimary": "Voir le catalogue",
+    "ctaSecondary": "Nous contacter",
+    "scroll": "Explorer",
+    "word1": "Authenticité",
+    "word2": "Fonctionnalité",
+    "word3": "Élégance"
+  },
+  "values": {
+    "eyebrow": "Ce qui nous définit",
+    "title": "Quatre principes, une façon de travailler",
+    "items": {
+      "bespoke": {
+        "title": "Sur mesure",
+        "text": "Chaque pièce naît de l'espace et de ceux qui l'habitent, dessinée de zéro et jamais choisie dans un catalogue. Nous mesurons, nous écoutons, et ensuite seulement nous concevons."
+      },
+      "rigor": {
+        "title": "Rigueur",
+        "text": "Nous travaillons au millimètre, avec des assemblages faits pour durer des décennies. Ce qui ne se voit pas est aussi soigné que ce qui reste visible."
+      },
+      "materials": {
+        "title": "Matériaux",
+        "text": "Nous choisissons des bois nobles, des placages et des laques pour leur vérité, leur veinage et leur toucher. La matière est le premier détail de chaque pièce."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "text": "Du premier dessin à la pose, rien n'est laissé au hasard. La même équipe qui conçoit la pièce l'accompagne jusqu'à la dernière vis."
+      }
+    }
+  },
+  "home": {
+    "catalog": {
+      "eyebrow": "Catalogue",
+      "title": "Des pièces qui ordonnent l'espace",
+      "lead": "Une sélection de mobilier sur mesure — cuisines, dressings et intérieurs conçus comme de l'architecture.",
+      "cta": "Voir tout le catalogue"
+    },
+    "projects": {
+      "eyebrow": "Projets",
+      "title": "Des espaces où le bois est structure",
+      "lead": "Des interventions complètes dans des maisons, appartements et espaces commerciaux.",
+      "cta": "Voir tous les projets"
+    },
+    "work": {
+      "eyebrow": "Travail",
+      "title": "De la pièce à l'espace",
+      "lead": "Mobilier sur mesure et interventions complètes — en bois."
+    },
+    "process": {
+      "eyebrow": "Méthode",
+      "title": "Du premier croquis à la dernière vis.",
+      "lead": "Un processus linéaire, transparent et accompagné à chaque étape.",
+      "steps": {
+        "consult": { "n": "01", "title": "Consultation", "text": "Nous écoutons l'espace, l'usage et l'ambition." },
+        "design": { "n": "02", "title": "Conception", "text": "Dessin technique et visualisation. Matériaux et finitions définis." },
+        "production": { "n": "03", "title": "Production", "text": "Fabrication en atelier, avec un contrôle qualité pièce par pièce." },
+        "install": { "n": "04", "title": "Installation", "text": "Pose propre et précise, avec réglage final sur place." }
+      }
+    },
+    "materials": {
+      "eyebrow": "Matériaux",
+      "title": "La matière est le premier détail",
+      "lead": "Nous travaillons les bois massifs, les placages et les laques — choisis pour leur durabilité, leur veinage et leur toucher.",
+      "cta": "Explorer les matériaux"
+    },
+    "cta": {
+      "eyebrow": "Commençons",
+      "title": "Un espace en tête ?",
+      "lead": "Parlez-nous de l'idée. Nous répondons avec un plan, un devis et un calendrier.",
+      "button": "Contactez-nous"
+    }
+  },
+  "catalogPage": {
+    "eyebrow": "Catalogue",
+    "title": "Mobilier fait à votre mesure",
+    "lead": "Des pièces faites pour durer. Filtrez par type, recherchez ou triez.",
+    "searchPlaceholder": "Rechercher dans le catalogue",
+    "sort": {
+      "recent": "Plus récent",
+      "alpha": "A — Z",
+      "category": "Par catégorie"
+    }
+  },
+  "projectsPage": {
+    "eyebrow": "Projets",
+    "title": "Une sélection unique de travail",
+    "lead": "Une sélection d'interventions achevées. Filtrez par type ou recherchez.",
+    "searchPlaceholder": "Rechercher des projets"
+  },
+  "catalogDetail": {
+    "back": "Catalogue",
+    "materials": "Matériaux",
+    "dimensions": "Dimensions",
+    "category": "Type",
+    "ctaTitle": "Vous voulez une pièce similaire ?",
+    "ctaLead": "Contactez-nous et nous menons votre projet du concept à l'installation.",
+    "cta": "Contactez-nous",
+    "related": "Autres pièces"
+  },
+  "projectDetail": {
+    "back": "Projets",
+    "location": "Lieu",
+    "year": "Année",
+    "category": "Type",
+    "ctaTitle": "Vous imaginez quelque chose comme ça ?",
+    "ctaLead": "Contactez-nous et nous menons votre projet du concept à l'installation.",
+    "cta": "Contactez-nous",
+    "related": "Autres projets"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Obsédés par le détail",
+    "intro": "Pedro Cunha Carpintaria — mobilier sur mesure et intérieurs en bois. Du concept au millimètre.",
+    "presence": {
+      "eyebrow": "Où nous travaillons",
+      "lead": "Nous concevons, fabriquons et installons avec le même soin du détail, où que soit le projet.",
+      "portugal": "Portugal",
+      "portugalLabel": "Ponte de Lima",
+      "france": "France",
+      "franceLabel": "Projets sur mesure",
+      "more": "Et au-delà",
+      "moreLabel": "Où le projet l'exige"
+    },
+    "what": {
+      "eyebrow": "Ce que nous faisons",
+      "title": "Mobilier et intérieurs, sur mesure",
+      "lead": "Nous concevons et fabriquons chaque pièce de A à Z — du concept à la pose.",
+      "items": {
+        "furniture": { "title": "Mobilier sur mesure", "text": "Des pièces uniques, pensées pour l'espace et ses usages." },
+        "kitchens": { "title": "Cuisines", "text": "Fonctionnelles et silencieuses, faites pour durer." },
+        "wardrobes": { "title": "Dressings", "text": "Un rangement dessiné au détail, sans gaspillage." },
+        "interiors": { "title": "Intérieurs", "text": "Lambris, bibliothèques et menuiserie qui définissent l'espace." }
+      }
+    },
+    "history": {
+      "title": "Histoire",
+      "text": "Nous sommes nés de la conviction que le mobilier n'est pas de la décoration — c'est de l'architecture à l'échelle du geste. Nous avons commencé dans un petit atelier et avons grandi sans jamais diluer l'exigence. Chaque projet est traité comme s'il était le premier à être vu et le dernier à durer."
+    },
+    "approach": {
+      "title": "Démarche",
+      "text": "Nous faisons la bonne pièce pour le bon espace."
+    },
+    "method": {
+      "title": "Méthode",
+      "text": "Dessin technique en interne, prototypage si nécessaire, fabrication en atelier et installation par l'équipe même qui a construit la pièce. Aucun intermédiaire entre l'idée et le résultat."
+    },
+    "stats": {
+      "years": "Années de métier",
+      "projects": "Projets achevés",
+      "pieces": "Pièces produites",
+      "satisfaction": "Clients qui recommandent"
+    }
+  },
+  "materialsPage": {
+    "eyebrow": "Matériaux",
+    "title": "Bois, finitions et détails",
+    "lead": "Le choix du matériau est la première décision de conception. Voici nos matières de prédilection.",
+    "woods": {
+      "title": "Bois",
+      "items": {
+        "oak": { "name": "Chêne", "text": "Veinage ouvert et noblesse tranquille. Structure et présence." },
+        "walnut": { "name": "Noyer", "text": "Tons profonds et dessin riche. Pour les pièces signature." },
+        "ash": { "name": "Frêne", "text": "Clair, fibreux et résistant. Lumière et légèreté." },
+        "oakSmoked": { "name": "Chêne fumé", "text": "Caractère sombre obtenu par la réaction naturelle du bois." }
+      }
+    },
+    "finishes": {
+      "title": "Finitions",
+      "items": {
+        "oil": { "name": "Huile naturelle", "text": "Toucher mat et tactile. Protège sans masquer le veinage." },
+        "matte": { "name": "Laque mate", "text": "Surface continue, couleur pleine, aucun brillant." },
+        "veneer": { "name": "Placage", "text": "La beauté du bois massif avec la stabilité dimensionnelle." },
+        "soap": { "name": "Savon", "text": "Tradition nordique : clair, soyeux et vivant au toucher." }
+      }
+    },
+    "details": {
+      "title": "Détails de construction",
+      "items": {
+        "joinery": { "name": "Assemblages", "text": "Queues d'aronde et tenons apparents quand le détail mérite d'être vu." },
+        "edges": { "name": "Arêtes", "text": "Angles calibrés et rayons constants sur toute la pièce." },
+        "hardware": { "name": "Quincaillerie", "text": "Mécanismes cachés et ouverture silencieuse, sans poignées quand c'est possible." },
+        "grain": { "name": "Continuité du veinage", "text": "Dessin continu entre portes et tiroirs, comme si la pièce était un seul bloc." }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact",
+    "lead": "Dites-nous ce que vous avez en tête. Nous répondons sous 24–48 heures ouvrées.",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "nom@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Optionnel",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Cuisine sur mesure, dressing, projet complet…",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez l'espace, l'idée et le délai souhaité.",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi…",
+      "success": "Message envoyé. Nous vous recontactons bientôt.",
+      "error": "Envoi impossible. Réessayez ou contactez-nous directement."
+    },
+    "info": {
+      "title": "Atelier",
+      "phone": "Téléphone",
+      "email": "Email",
+      "social": "Réseaux",
+      "hours": "Horaires",
+      "hoursValue": "Lun — Ven · 9h à 18h",
+      "addressValue": "Ponte de Lima, Portugal",
+      "call": "Appeler",
+      "sendEmail": "Envoyer un email",
+      "viewMap": "Voir sur la carte",
+      "phoneNote": "(appel vers le réseau mobile national)"
+    }
+  },
+  "footer": {
+    "tagline": "Mobilier sur mesure et intérieurs en bois.",
+    "explore": "Explorer",
+    "studio": "Contact",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "rights": "Tous droits réservés.",
+    "complaints": "Livre de Réclamations",
+    "credit": "Menuiserie sur mesure",
+    "newsletter": "Recevez les actualités de l'atelier",
+    "newsletterCta": "S'abonner",
+    "emailPlaceholder": "Votre email"
+  },
+  "categories": {
+    "bespoke": "Sur mesure",
+    "kitchens": "Cuisines",
+    "wardrobes": "Dressings",
+    "interiors": "Intérieurs",
+    "others": "Autres",
+    "residential": "Résidentiel",
+    "commercial": "Commercial",
+    "renovation": "Rénovation"
+  },
+  "admin": {
+    "login": {
+      "title": "Espace réservé",
+      "subtitle": "Accès à la gestion de contenu.",
+      "username": "Utilisateur",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "submitting": "Connexion…",
+      "error": "Identifiants invalides."
+    },
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "catalog": "Catalogue",
+      "projects": "Projets",
+      "categories": "Catégories",
+      "site": "Voir le site",
+      "logout": "Se déconnecter"
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "welcome": "Gestion du contenu de l'atelier.",
+      "catalogCount": "Pièces du catalogue",
+      "projectCount": "Projets",
+      "published": "Publiés",
+      "drafts": "Brouillons",
+      "quickCatalog": "Nouvelle pièce",
+      "quickProject": "Nouveau projet"
+    },
+    "table": {
+      "title": "Titre",
+      "category": "Catégorie",
+      "status": "Statut",
+      "updated": "Mis à jour",
+      "actions": "Actions",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "publish": "Publier",
+      "unpublish": "Dépublier",
+      "published": "Publié",
+      "draft": "Brouillon",
+      "featured": "À la une",
+      "confirmDelete": "Supprimer définitivement ?",
+      "empty": "Aucun enregistrement pour l'instant."
+    },
+    "form": {
+      "ptOnlyNote": "Écrivez en portugais — l'anglais et le français sont traduits automatiquement.",
+      "newCatalog": "Nouvelle pièce de catalogue",
+      "editCatalog": "Modifier la pièce",
+      "newProject": "Nouveau projet",
+      "editProject": "Modifier le projet",
+      "title": "Titre",
+      "slug": "Slug (URL)",
+      "slugHint": "Généré à partir du titre. Modifiable.",
+      "category": "Catégorie",
+      "description": "Description",
+      "materials": "Matériaux",
+      "dimensions": "Dimensions",
+      "location": "Lieu",
+      "year": "Année",
+      "images": "Images",
+      "imagesHint": "La première image est la couverture.",
+      "upload": "Téléverser des images",
+      "uploading": "Téléversement…",
+      "featured": "Marquer à la une",
+      "published": "Publié",
+      "translations": "Traductions",
+      "save": "Enregistrer",
+      "saving": "Enregistrement…",
+      "cancel": "Annuler",
+      "saved": "Enregistré avec succès.",
+      "remove": "Retirer"
+    },
+    "categories": {
+      "title": "Catégories",
+      "lead": "Types utilisés dans le catalogue et les projets.",
+      "name": "Nom",
+      "type": "S'applique à",
+      "catalog": "Catalogue",
+      "projects": "Projets",
+      "add": "Ajouter une catégorie",
+      "namePt": "Nom (PT)",
+      "nameEn": "Nom (EN)",
+      "nameFr": "Nom (FR)"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "lead": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "siteName": "Pedro Cunha Carpintaria",
+    "tagline": "Carpintaria de autor e mobiliário à medida",
+    "description": "Atelier de carpintaria e mobiliário à medida. Detalhe, precisão e qualidade — peças desenhadas e produzidas com rigor para arquitetura e interiores.",
+    "ogAlt": "Pedro Cunha Carpintaria — mobiliário à medida"
+  },
+  "nav": {
+    "home": "Início",
+    "catalog": "Catálogo",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "materials": "Materiais",
+    "contact": "Contactos",
+    "menu": "Menu",
+    "close": "Fechar",
+    "language": "Idioma"
+  },
+  "common": {
+    "viewAll": "Ver tudo",
+    "viewMore": "Ver mais",
+    "discover": "Descobrir",
+    "readMore": "Saber mais",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "previous": "Anterior",
+    "loading": "A carregar",
+    "search": "Pesquisar",
+    "filterAll": "Todos",
+    "sortBy": "Ordenar por",
+    "noResults": "Sem resultados",
+    "noResultsHint": "Ajuste a pesquisa ou os filtros.",
+    "requestQuote": "Pedir orçamento",
+    "gallery": "Galeria",
+    "details": "Detalhes",
+    "category": "Categoria",
+    "materials": "Materiais",
+    "dimensions": "Dimensões",
+    "location": "Localização",
+    "year": "Ano",
+    "featured": "Destaque",
+    "results": "{count, plural, =0 {Sem peças} =1 {# peça} other {# peças}}"
+  },
+  "hero": {
+    "eyebrow": "Carpintaria por medida",
+    "line1": "Detalhe.",
+    "line2": "Precisão.",
+    "line3": "Qualidade.",
+    "lead": "Mobiliário à medida desenhados e construídos com rigor.",
+    "ctaPrimary": "Ver catálogo",
+    "ctaSecondary": "Falar connosco",
+    "scroll": "Explorar",
+    "word1": "Autenticidade",
+    "word2": "Funcionalidade",
+    "word3": "Elegância"
+  },
+  "values": {
+    "eyebrow": "O que nos define",
+    "title": "Quatro princípios, uma forma de trabalhar",
+    "items": {
+      "bespoke": {
+        "title": "À Medida",
+        "text": "Cada peça nasce do espaço e de quem o habita, desenhada de raiz e nunca escolhida de um catálogo. Medimos, ouvimos e só depois projetamos."
+      },
+      "rigor": {
+        "title": "Rigor",
+        "text": "Trabalhamos com tolerâncias ao milímetro e encaixes pensados para durar décadas. O que não se vê é tão cuidado como o que fica à vista."
+      },
+      "materials": {
+        "title": "Materiais",
+        "text": "Escolhemos madeiras nobres, folheados e lacados pela sua verdade, pelo desenho do veio e pelo tacto. A matéria é o primeiro detalhe de cada peça."
+      },
+      "excellence": {
+        "title": "Excelência",
+        "text": "Do primeiro desenho à instalação, nada é deixado ao acaso. A mesma equipa que projeta acompanha a peça até ao último parafuso."
+      }
+    }
+  },
+  "home": {
+    "catalog": {
+      "eyebrow": "Catálogo",
+      "title": "Peças que organizam o espaço",
+      "lead": "Uma seleção de mobiliário à medida — cozinhas, roupeiros e interiores concebidos como arquitetura.",
+      "cta": "Ver catálogo completo"
+    },
+    "projects": {
+      "eyebrow": "Projetos",
+      "title": "Espaços onde a madeira é estrutura",
+      "lead": "Intervenções completas em casas, apartamentos e espaços comerciais.",
+      "cta": "Ver todos os projetos"
+    },
+    "work": {
+      "eyebrow": "Trabalho",
+      "title": "Da peça ao espaço",
+      "lead": "Mobiliário à medida e intervenções completas — em madeira."
+    },
+    "process": {
+      "eyebrow": "Método",
+      "title": "Do primeiro esboço ao último parafuso.",
+      "lead": "Um processo linear, transparente e acompanhado em todas as fases.",
+      "steps": {
+        "consult": { "n": "01", "title": "Consulta", "text": "Ouvimos o espaço, o uso e a ambição." },
+        "design": { "n": "02", "title": "Design", "text": "Desenho técnico e visualização. Materiais e acabamentos definidos." },
+        "production": { "n": "03", "title": "Produção", "text": "Fabrico em oficina, com controlo de qualidade peça a peça." },
+        "install": { "n": "04", "title": "Instalação", "text": "Montagem limpa e precisa, com afinação final no local." }
+      }
+    },
+    "materials": {
+      "eyebrow": "Materiais",
+      "title": "A matéria é o primeiro detalhe",
+      "lead": "Trabalhamos madeiras maciças, folheados e lacados — escolhidos pela durabilidade, pelo desenho do veio e pelo toque.",
+      "cta": "Explorar materiais"
+    },
+    "cta": {
+      "eyebrow": "Vamos começar",
+      "title": "Tem um espaço em mente?",
+      "lead": "Conte-nos a ideia. Respondemos com um plano, um orçamento e um calendário.",
+      "button": "Fale connosco"
+    }
+  },
+  "catalogPage": {
+    "eyebrow": "Catálogo",
+    "title": "Mobiliário feito à sua medida",
+    "lead": "Peças concebidas para durar. Filtre por tipologia, pesquise ou ordene.",
+    "searchPlaceholder": "Pesquisar no catálogo",
+    "sort": {
+      "recent": "Mais recente",
+      "alpha": "A — Z",
+      "category": "Por categoria"
+    }
+  },
+  "projectsPage": {
+    "eyebrow": "Projetos",
+    "title": "Uma seleção única de trabalho",
+    "lead": "Uma seleção de intervenções concluídas. Filtre por tipologia ou pesquise.",
+    "searchPlaceholder": "Pesquisar projetos"
+  },
+  "catalogDetail": {
+    "back": "Catálogo",
+    "materials": "Materiais",
+    "dimensions": "Dimensões",
+    "category": "Tipologia",
+    "ctaTitle": "Quer uma peça semelhante?",
+    "ctaLead": "Fale connosco e levamos o seu projeto do conceito à instalação.",
+    "cta": "Entre em contacto connosco",
+    "related": "Outras peças"
+  },
+  "projectDetail": {
+    "back": "Projetos",
+    "location": "Localização",
+    "year": "Ano",
+    "category": "Tipologia",
+    "ctaTitle": "Imagina algo assim?",
+    "ctaLead": "Fale connosco e levamos o seu projeto do conceito à instalação.",
+    "cta": "Entre em contacto connosco",
+    "related": "Outros projetos"
+  },
+  "about": {
+    "eyebrow": "Sobre",
+    "title": "Obcecados pelo detalhe",
+    "intro": "Pedro Cunha Carpintaria — mobiliário à medida e interiores em madeira. Do conceito ao milímetro.",
+    "presence": {
+      "eyebrow": "Onde trabalhamos",
+      "lead": "Desenhamos, produzimos e instalamos com o mesmo cuidado em cada detalhe, onde quer que o projeto esteja.",
+      "portugal": "Portugal",
+      "portugalLabel": "Ponte de Lima",
+      "france": "França",
+      "franceLabel": "Projetos à medida",
+      "more": "E não só",
+      "moreLabel": "Onde o projeto pedir"
+    },
+    "what": {
+      "eyebrow": "O que fazemos",
+      "title": "Mobiliário e interiores, à medida",
+      "lead": "Desenhamos e produzimos cada peça de raiz — do conceito à instalação.",
+      "items": {
+        "furniture": { "title": "Mobiliário à medida", "text": "Peças únicas, pensadas para o espaço e para quem o usa." },
+        "kitchens": { "title": "Cozinhas", "text": "Funcionais e silenciosas, feitas para durar décadas." },
+        "wardrobes": { "title": "Roupeiros e closets", "text": "Arrumação desenhada ao detalhe, sem desperdício." },
+        "interiors": { "title": "Interiores", "text": "Painéis, bibliotecas e carpintaria que definem o espaço." }
+      }
+    },
+    "history": {
+      "title": "História",
+      "text": "Nascemos da convicção de que mobiliário não é decoração — é arquitetura à escala do gesto. Começámos numa pequena oficina e crescemos sem nunca diluir a exigência. Cada projeto é tratado como se fosse o primeiro a ser visto e o último a durar."
+    },
+    "approach": {
+      "title": "Abordagem",
+      "text": "Fazemos a peça certa para o espaço certo."
+    },
+    "method": {
+      "title": "Método",
+      "text": "Desenho técnico próprio, prototipagem quando necessário, fabrico em oficina e instalação pela mesma equipa que construiu a peça. Sem intermediários entre a ideia e o resultado."
+    },
+    "stats": {
+      "years": "Anos de ofício",
+      "projects": "Projetos concluídos",
+      "pieces": "Peças produzidas",
+      "satisfaction": "Clientes que recomendam"
+    }
+  },
+  "materialsPage": {
+    "eyebrow": "Materiais",
+    "title": "Madeiras, acabamentos e detalhes",
+    "lead": "A escolha do material é a primeira decisão de desenho. Estas são as nossas matérias de eleição.",
+    "woods": {
+      "title": "Madeiras",
+      "items": {
+        "oak": { "name": "Carvalho", "text": "Veio aberto e nobreza tranquila. Estrutura e presença." },
+        "walnut": { "name": "Nogueira", "text": "Tons profundos e desenho rico. Para peças de assinatura." },
+        "ash": { "name": "Freixo", "text": "Claro, fibroso e resistente. Luz e leveza." },
+        "oakSmoked": { "name": "Carvalho fumado", "text": "Carácter escuro obtido pela reação natural da madeira." }
+      }
+    },
+    "finishes": {
+      "title": "Acabamentos",
+      "items": {
+        "oil": { "name": "Óleo natural", "text": "Toque mate e tátil. Protege sem esconder o veio." },
+        "matte": { "name": "Lacado mate", "text": "Superfície contínua, cor sólida, zero brilho." },
+        "veneer": { "name": "Folheado", "text": "A beleza da madeira maciça com estabilidade dimensional." },
+        "soap": { "name": "Sabão", "text": "Tradição nórdica: claro, sedoso e vivo ao toque." }
+      }
+    },
+    "details": {
+      "title": "Detalhes construtivos",
+      "items": {
+        "joinery": { "name": "Encaixes", "text": "Malhetes e respigas à vista quando o detalhe merece ser visto." },
+        "edges": { "name": "Arestas", "text": "Cantos calibrados e raios constantes em toda a peça." },
+        "hardware": { "name": "Ferragens", "text": "Mecanismos ocultos e abertura silenciosa, sem puxadores quando possível." },
+        "grain": { "name": "Continuidade de veio", "text": "Desenho contínuo entre portas e gavetas, como se a peça fosse um só bloco." }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contactos",
+    "title": "Contactos",
+    "lead": "Conte-nos o que tem em mente. Respondemos em 24–48 horas úteis.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "O seu nome",
+      "email": "Email",
+      "emailPlaceholder": "nome@email.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "Opcional",
+      "subject": "Assunto",
+      "subjectPlaceholder": "Cozinha à medida, roupeiro, projeto completo…",
+      "message": "Mensagem",
+      "messagePlaceholder": "Descreva o espaço, a ideia e o prazo desejado.",
+      "submit": "Enviar mensagem",
+      "submitting": "A enviar…",
+      "success": "Mensagem enviada. Entraremos em contacto em breve.",
+      "error": "Não foi possível enviar. Tente novamente ou contacte-nos diretamente."
+    },
+    "info": {
+      "title": "Atelier",
+      "phone": "Telefone",
+      "email": "Email",
+      "social": "Redes",
+      "hours": "Horário",
+      "hoursValue": "Seg — Sex · 9h às 18h",
+      "addressValue": "Ponte de Lima, Portugal",
+      "call": "Ligar",
+      "sendEmail": "Enviar email",
+      "viewMap": "Ver no mapa",
+      "phoneNote": "(chamada para a rede móvel nacional)"
+    }
+  },
+  "footer": {
+    "tagline": "Mobiliário à medida e interiores em madeira.",
+    "explore": "Explorar",
+    "studio": "Contactos",
+    "legal": "Legal",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "rights": "Todos os direitos reservados.",
+    "complaints": "Livro de Reclamações",
+    "credit": "Carpintaria por medida",
+    "newsletter": "Receba novidades do atelier",
+    "newsletterCta": "Subscrever",
+    "emailPlaceholder": "O seu email"
+  },
+  "categories": {
+    "bespoke": "Mobiliário à Medida",
+    "kitchens": "Cozinhas",
+    "wardrobes": "Roupeiros",
+    "interiors": "Interiores",
+    "others": "Outros",
+    "residential": "Residencial",
+    "commercial": "Comercial",
+    "renovation": "Reabilitação"
+  },
+  "admin": {
+    "login": {
+      "title": "Área reservada",
+      "subtitle": "Acesso à gestão de conteúdos.",
+      "username": "Utilizador",
+      "password": "Palavra-passe",
+      "submit": "Entrar",
+      "submitting": "A entrar…",
+      "error": "Credenciais inválidas."
+    },
+    "nav": {
+      "dashboard": "Painel",
+      "catalog": "Catálogo",
+      "projects": "Projetos",
+      "categories": "Categorias",
+      "site": "Ver site",
+      "logout": "Sair"
+    },
+    "dashboard": {
+      "title": "Painel",
+      "welcome": "Gestão de conteúdos do atelier.",
+      "catalogCount": "Peças no catálogo",
+      "projectCount": "Projetos",
+      "published": "Publicados",
+      "drafts": "Rascunhos",
+      "quickCatalog": "Nova peça",
+      "quickProject": "Novo projeto"
+    },
+    "table": {
+      "title": "Título",
+      "category": "Categoria",
+      "status": "Estado",
+      "updated": "Atualizado",
+      "actions": "Ações",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "publish": "Publicar",
+      "unpublish": "Despublicar",
+      "published": "Publicado",
+      "draft": "Rascunho",
+      "featured": "Destaque",
+      "confirmDelete": "Eliminar definitivamente?",
+      "empty": "Ainda não há registos."
+    },
+    "form": {
+      "ptOnlyNote": "Escreva em português — inglês e francês são traduzidos automaticamente.",
+      "newCatalog": "Nova peça de catálogo",
+      "editCatalog": "Editar peça",
+      "newProject": "Novo projeto",
+      "editProject": "Editar projeto",
+      "title": "Título",
+      "slug": "Slug (URL)",
+      "slugHint": "Gerado a partir do título. Pode editar.",
+      "category": "Categoria",
+      "description": "Descrição",
+      "materials": "Materiais",
+      "dimensions": "Dimensões",
+      "location": "Localização",
+      "year": "Ano",
+      "images": "Imagens",
+      "imagesHint": "A primeira imagem é a capa.",
+      "upload": "Carregar imagens",
+      "uploading": "A carregar…",
+      "featured": "Marcar como destaque",
+      "published": "Publicado",
+      "translations": "Traduções",
+      "save": "Guardar",
+      "saving": "A guardar…",
+      "cancel": "Cancelar",
+      "saved": "Guardado com sucesso.",
+      "remove": "Remover"
+    },
+    "categories": {
+      "title": "Categorias",
+      "lead": "Tipologias usadas no catálogo e nos projetos.",
+      "name": "Nome",
+      "type": "Aplica-se a",
+      "catalog": "Catálogo",
+      "projects": "Projetos",
+      "add": "Adicionar categoria",
+      "namePt": "Nome (PT)",
+      "nameEn": "Nome (EN)",
+      "nameFr": "Nome (FR)"
+    }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "lead": "A página que procura não existe ou foi movida.",
+    "cta": "Voltar ao início"
+  }
+}

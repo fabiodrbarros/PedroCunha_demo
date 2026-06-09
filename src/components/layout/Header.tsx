@@ -1,0 +1,152 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { Monogram } from "@/components/brand/Monogram";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { NAV_LINKS } from "./nav-config";
+import { cn } from "@/lib/utils";
+
+export function Header() {
+  const t = useTranslations("nav");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  return (
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-brand",
+        scrolled
+          ? "border-b border-stone-200/70 bg-paper/70 backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent"
+      )}
+    >
+      <div className="container flex h-[var(--header-h)] items-center justify-between">
+        {/* Logo — on the home page it only appears after scrolling
+            (the hero already shows the large logo); always shown elsewhere. */}
+        <Link
+          href="/"
+          aria-label="Pedro Cunha Carpintaria"
+          className={cn(
+            "relative z-50 -my-2 shrink-0 transition-all duration-500 ease-brand",
+            scrolled || !isHome || open
+              ? "translate-y-0 opacity-100"
+              : "pointer-events-none -translate-y-1 opacity-0"
+          )}
+        >
+          <Monogram className="h-8 w-8 transition-opacity duration-300 hover:opacity-70" />
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-9 lg:flex">
+          {NAV_LINKS.map((item) => {
+            const active = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "link-underline text-[0.82rem] uppercase tracking-widest transition-colors duration-300",
+                  active ? "text-ink" : "text-ink-muted hover:text-ink"
+                )}
+              >
+                {t(item.key)}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="hidden items-center gap-7 lg:flex">
+          <span className="h-4 w-px bg-stone-300" />
+          <LanguageSwitcher />
+        </div>
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          className="relative z-50 flex items-center gap-2 lg:hidden"
+          aria-label={open ? t("close") : t("menu")}
+        >
+          <span className="text-[0.7rem] uppercase tracking-widest text-ink">
+            {open ? t("close") : t("menu")}
+          </span>
+          <span className="flex h-4 w-5 flex-col justify-center gap-[5px]">
+            <span
+              className={cn(
+                "h-px w-full bg-ink transition-transform duration-300",
+                open && "translate-y-[3px] rotate-45"
+              )}
+            />
+            <span
+              className={cn(
+                "h-px w-full bg-ink transition-transform duration-300",
+                open && "-translate-y-[3px] -rotate-45"
+              )}
+            />
+          </span>
+        </button>
+      </div>
+
+      {/* Mobile menu overlay */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-0 z-40 flex flex-col bg-paper lg:hidden"
+          >
+            <div className="container flex flex-1 flex-col justify-center">
+              <Monogram className="mb-12 h-10 w-10 text-ink" />
+              <nav className="flex flex-col gap-2">
+                {NAV_LINKS.map((item, i) => (
+                  <motion.div
+                    key={item.href}
+                    initial={{ opacity: 0, y: 14 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className="font-serif text-4xl tracking-tight text-ink"
+                    >
+                      {t(item.key)}
+                    </Link>
+                  </motion.div>
+                ))}
+              </nav>
+            </div>
+            <div className="container flex items-center justify-between border-t border-stone-200 py-6">
+              <span className="text-[0.7rem] uppercase tracking-widest text-ink-muted">
+                {t("language")}
+              </span>
+              <LanguageSwitcher />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+}

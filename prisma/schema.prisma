@@ -1,0 +1,113 @@
+// Pedro Cunha Carpintaria — data model
+// Development: SQLite. Production: switch `provider` to "postgresql"
+// and point DATABASE_URL at your Postgres instance (see README).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  // provider = "postgresql"  // ← production
+  url      = env("DATABASE_URL")
+}
+
+/// Tipologias usadas no catálogo e nos projetos.
+model Category {
+  id     String @id @default(cuid())
+  slug   String @unique
+  namePt String
+  nameEn String
+  nameFr String
+  /// "catalog" | "project" | "both"
+  scope  String @default("both")
+  order  Int    @default(0)
+
+  catalogItems CatalogItem[]
+  projects     Project[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// Peça do catálogo (mobiliário à medida).
+model CatalogItem {
+  id   String @id @default(cuid())
+  slug String @unique
+
+  titlePt String
+  titleEn String
+  titleFr String
+
+  descriptionPt String
+  descriptionEn String
+  descriptionFr String
+
+  // Materiais (texto livre, opcionalmente localizado)
+  materialsPt String?
+  materialsEn String?
+  materialsFr String?
+
+  dimensions String?
+
+  /// Array de URLs de imagens, serializado em JSON.
+  images String @default("[]")
+
+  featured  Boolean @default(false)
+  published Boolean @default(true)
+  order     Int     @default(0)
+
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, featured])
+  @@index([categoryId])
+}
+
+/// Projeto concluído.
+model Project {
+  id   String @id @default(cuid())
+  slug String @unique
+
+  titlePt String
+  titleEn String
+  titleFr String
+
+  descriptionPt String
+  descriptionEn String
+  descriptionFr String
+
+  location String?
+  year     Int?
+
+  /// Array de URLs de imagens, serializado em JSON.
+  images String @default("[]")
+
+  featured  Boolean @default(false)
+  published Boolean @default(true)
+  order     Int     @default(0)
+
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, featured])
+  @@index([categoryId])
+}
+
+/// Mensagens recebidas pelo formulário de contacto.
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

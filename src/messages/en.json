@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "siteName": "Pedro Cunha Carpintaria",
+    "tagline": "Bespoke joinery & made-to-measure furniture",
+    "description": "A joinery atelier for made-to-measure furniture and interiors. Detail, precision and quality — pieces designed and built with rigour for architecture and interiors.",
+    "ogAlt": "Pedro Cunha Carpintaria — bespoke furniture"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "projects": "Projects",
+    "about": "About",
+    "materials": "Materials",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language"
+  },
+  "common": {
+    "viewAll": "View all",
+    "viewMore": "View more",
+    "discover": "Discover",
+    "readMore": "Read more",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading",
+    "search": "Search",
+    "filterAll": "All",
+    "sortBy": "Sort by",
+    "noResults": "No results",
+    "noResultsHint": "Adjust your search or filters.",
+    "requestQuote": "Request a quote",
+    "gallery": "Gallery",
+    "details": "Details",
+    "category": "Category",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "location": "Location",
+    "year": "Year",
+    "featured": "Featured",
+    "results": "{count, plural, =0 {No pieces} =1 {# piece} other {# pieces}}"
+  },
+  "hero": {
+    "eyebrow": "Made-to-measure joinery",
+    "line1": "Detail.",
+    "line2": "Precision.",
+    "line3": "Quality.",
+    "lead": "Made-to-measure furniture, designed and built with rigour.",
+    "ctaPrimary": "View catalog",
+    "ctaSecondary": "Get in touch",
+    "scroll": "Explore",
+    "word1": "Authenticity",
+    "word2": "Functionality",
+    "word3": "Elegance"
+  },
+  "values": {
+    "eyebrow": "What defines us",
+    "title": "Four principles, one way of working",
+    "items": {
+      "bespoke": {
+        "title": "Bespoke",
+        "text": "Every piece is born from the space and the people who live in it, drawn from scratch and never picked from a catalogue. We measure, we listen, and only then we design."
+      },
+      "rigor": {
+        "title": "Rigour",
+        "text": "We work to millimetre tolerances, with joints built to last for decades. What you don't see is as considered as what stays in view."
+      },
+      "materials": {
+        "title": "Materials",
+        "text": "We choose noble timbers, veneers and lacquers for their honesty, their grain and their touch. Matter is the first detail of every piece."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "text": "From the first drawing to installation, nothing is left to chance. The same team that designs the piece sees it through to the last screw."
+      }
+    }
+  },
+  "home": {
+    "catalog": {
+      "eyebrow": "Catalog",
+      "title": "Pieces that order the space",
+      "lead": "A selection of made-to-measure furniture — kitchens, wardrobes and interiors conceived as architecture.",
+      "cta": "View full catalog"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Spaces where timber is structure",
+      "lead": "Complete interventions in homes, apartments and commercial spaces.",
+      "cta": "View all projects"
+    },
+    "work": {
+      "eyebrow": "Work",
+      "title": "From the piece to the space",
+      "lead": "Made-to-measure furniture and complete interventions — in timber."
+    },
+    "process": {
+      "eyebrow": "Method",
+      "title": "From first sketch to last screw.",
+      "lead": "A linear, transparent process, guided at every stage.",
+      "steps": {
+        "consult": { "n": "01", "title": "Consultation", "text": "We listen to the space, the use and the ambition." },
+        "design": { "n": "02", "title": "Design", "text": "Technical drawing and visualisation. Materials and finishes defined." },
+        "production": { "n": "03", "title": "Production", "text": "Workshop fabrication with piece-by-piece quality control." },
+        "install": { "n": "04", "title": "Installation", "text": "Clean, precise assembly with final tuning on site." }
+      }
+    },
+    "materials": {
+      "eyebrow": "Materials",
+      "title": "Matter is the first detail",
+      "lead": "We work solid timbers, veneers and lacquers — chosen for durability, grain and touch.",
+      "cta": "Explore materials"
+    },
+    "cta": {
+      "eyebrow": "Let's begin",
+      "title": "Have a space in mind?",
+      "lead": "Tell us the idea. We reply with a plan, a quote and a timeline.",
+      "button": "Get in touch"
+    }
+  },
+  "catalogPage": {
+    "eyebrow": "Catalog",
+    "title": "Furniture made to your measure",
+    "lead": "Pieces built to last. Filter by type, search or sort.",
+    "searchPlaceholder": "Search the catalog",
+    "sort": {
+      "recent": "Most recent",
+      "alpha": "A — Z",
+      "category": "By category"
+    }
+  },
+  "projectsPage": {
+    "eyebrow": "Projects",
+    "title": "A singular selection of work",
+    "lead": "A selection of finished interventions. Filter by type or search.",
+    "searchPlaceholder": "Search projects"
+  },
+  "catalogDetail": {
+    "back": "Catalog",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "category": "Type",
+    "ctaTitle": "Want a similar piece?",
+    "ctaLead": "Get in touch and we'll take your project from concept to installation.",
+    "cta": "Get in touch",
+    "related": "Other pieces"
+  },
+  "projectDetail": {
+    "back": "Projects",
+    "location": "Location",
+    "year": "Year",
+    "category": "Type",
+    "ctaTitle": "Picturing something like this?",
+    "ctaLead": "Get in touch and we'll take your project from concept to installation.",
+    "cta": "Get in touch",
+    "related": "Other projects"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Obsessed with detail",
+    "intro": "Pedro Cunha Carpintaria — made-to-measure furniture and timber interiors. From concept to the millimetre.",
+    "presence": {
+      "eyebrow": "Where we work",
+      "lead": "We design, build and install with the same care in every detail, wherever the project is.",
+      "portugal": "Portugal",
+      "portugalLabel": "Ponte de Lima",
+      "france": "France",
+      "franceLabel": "Bespoke projects",
+      "more": "And beyond",
+      "moreLabel": "Wherever the project calls"
+    },
+    "what": {
+      "eyebrow": "What we do",
+      "title": "Furniture and interiors, made to measure",
+      "lead": "We design and build every piece from scratch — from concept to installation.",
+      "items": {
+        "furniture": { "title": "Bespoke furniture", "text": "Unique pieces, shaped to the space and the people in it." },
+        "kitchens": { "title": "Kitchens", "text": "Functional and silent, built to last for decades." },
+        "wardrobes": { "title": "Wardrobes & walk-ins", "text": "Storage designed to the detail, with no waste." },
+        "interiors": { "title": "Interiors", "text": "Panelling, libraries and joinery that define the space." }
+      }
+    },
+    "history": {
+      "title": "History",
+      "text": "We were born from the conviction that furniture is not decoration — it is architecture at the scale of the gesture. We started in a small workshop and grew without ever diluting the standard. Every project is treated as if it were the first to be seen and the last to endure."
+    },
+    "approach": {
+      "title": "Approach",
+      "text": "We make the right piece for the right space."
+    },
+    "method": {
+      "title": "Method",
+      "text": "In-house technical drawing, prototyping when needed, workshop fabrication and installation by the same team that built the piece. No intermediaries between the idea and the result."
+    },
+    "stats": {
+      "years": "Years of craft",
+      "projects": "Completed projects",
+      "pieces": "Pieces produced",
+      "satisfaction": "Clients who recommend"
+    }
+  },
+  "materialsPage": {
+    "eyebrow": "Materials",
+    "title": "Timbers, finishes and details",
+    "lead": "The choice of material is the first design decision. These are our materials of choice.",
+    "woods": {
+      "title": "Timbers",
+      "items": {
+        "oak": { "name": "Oak", "text": "Open grain and quiet nobility. Structure and presence." },
+        "walnut": { "name": "Walnut", "text": "Deep tones and rich figure. For signature pieces." },
+        "ash": { "name": "Ash", "text": "Pale, fibrous and resilient. Light and lightness." },
+        "oakSmoked": { "name": "Smoked oak", "text": "Dark character drawn from the timber's natural reaction." }
+      }
+    },
+    "finishes": {
+      "title": "Finishes",
+      "items": {
+        "oil": { "name": "Natural oil", "text": "Matte, tactile touch. Protects without hiding the grain." },
+        "matte": { "name": "Matte lacquer", "text": "Continuous surface, solid colour, zero sheen." },
+        "veneer": { "name": "Veneer", "text": "The beauty of solid timber with dimensional stability." },
+        "soap": { "name": "Soap", "text": "Nordic tradition: pale, silky and alive to the touch." }
+      }
+    },
+    "details": {
+      "title": "Construction details",
+      "items": {
+        "joinery": { "name": "Joinery", "text": "Dovetails and tenons on show when the detail deserves to be seen." },
+        "edges": { "name": "Edges", "text": "Calibrated corners and constant radii across the whole piece." },
+        "hardware": { "name": "Hardware", "text": "Hidden mechanisms and silent opening, handleless where possible." },
+        "grain": { "name": "Grain continuity", "text": "Continuous figure across doors and drawers, as if the piece were a single block." }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact",
+    "lead": "Tell us what you have in mind. We reply within 24–48 business hours.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "name@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Optional",
+      "subject": "Subject",
+      "subjectPlaceholder": "Bespoke kitchen, wardrobe, full project…",
+      "message": "Message",
+      "messagePlaceholder": "Describe the space, the idea and your timeline.",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Message sent. We'll be in touch soon.",
+      "error": "Couldn't send. Please try again or contact us directly."
+    },
+    "info": {
+      "title": "Atelier",
+      "phone": "Phone",
+      "email": "Email",
+      "social": "Social",
+      "hours": "Hours",
+      "hoursValue": "Mon — Fri · 9am to 6pm",
+      "addressValue": "Ponte de Lima, Portugal",
+      "call": "Call",
+      "sendEmail": "Send email",
+      "viewMap": "View on map",
+      "phoneNote": "(call to the national mobile network)"
+    }
+  },
+  "footer": {
+    "tagline": "Made-to-measure furniture and timber interiors.",
+    "explore": "Explore",
+    "studio": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "complaints": "Complaints Book",
+    "credit": "Made-to-measure joinery",
+    "newsletter": "News from the atelier",
+    "newsletterCta": "Subscribe",
+    "emailPlaceholder": "Your email"
+  },
+  "categories": {
+    "bespoke": "Made-to-measure",
+    "kitchens": "Kitchens",
+    "wardrobes": "Wardrobes",
+    "interiors": "Interiors",
+    "others": "Others",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "renovation": "Renovation"
+  },
+  "admin": {
+    "login": {
+      "title": "Restricted area",
+      "subtitle": "Access to content management.",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "error": "Invalid credentials."
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "catalog": "Catalog",
+      "projects": "Projects",
+      "categories": "Categories",
+      "site": "View site",
+      "logout": "Sign out"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "welcome": "Atelier content management.",
+      "catalogCount": "Catalog pieces",
+      "projectCount": "Projects",
+      "published": "Published",
+      "drafts": "Drafts",
+      "quickCatalog": "New piece",
+      "quickProject": "New project"
+    },
+    "table": {
+      "title": "Title",
+      "category": "Category",
+      "status": "Status",
+      "updated": "Updated",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "published": "Published",
+      "draft": "Draft",
+      "featured": "Featured",
+      "confirmDelete": "Delete permanently?",
+      "empty": "No records yet."
+    },
+    "form": {
+      "ptOnlyNote": "Write in Portuguese — English and French are translated automatically.",
+      "newCatalog": "New catalog piece",
+      "editCatalog": "Edit piece",
+      "newProject": "New project",
+      "editProject": "Edit project",
+      "title": "Title",
+      "slug": "Slug (URL)",
+      "slugHint": "Generated from the title. You can edit it.",
+      "category": "Category",
+      "description": "Description",
+      "materials": "Materials",
+      "dimensions": "Dimensions",
+      "location": "Location",
+      "year": "Year",
+      "images": "Images",
+      "imagesHint": "The first image is the cover.",
+      "upload": "Upload images",
+      "uploading": "Uploading…",
+      "featured": "Mark as featured",
+      "published": "Published",
+      "translations": "Translations",
+      "save": "Save",
+      "saving": "Saving…",
+      "cancel": "Cancel",
+      "saved": "Saved successfully.",
+      "remove": "Remove"
+    },
+    "categories": {
+      "title": "Categories",
+      "lead": "Types used across the catalog and projects.",
+      "name": "Name",
+      "type": "Applies to",
+      "catalog": "Catalog",
+      "projects": "Projects",
+      "add": "Add category",
+      "namePt": "Name (PT)",
+      "nameEn": "Name (EN)",
+      "nameFr": "Name (FR)"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "lead": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}
