@@ -50,10 +50,10 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Prisma CLI + engines + schema/migrations (for `migrate deploy` at startup)
-COPY --from=builder /app/node_modules/prisma ./node_modules/prisma
-COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
-COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
+# Full node_modules so the Prisma CLI (`migrate deploy` at startup) has all of
+# its dependencies — the slim copy missed transitive deps such as `effect`
+# (pulled in by @prisma/config). Plus the schema + migrations.
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
 COPY --from=builder /app/prisma ./prisma
 
 # Entrypoint runs migrations, then launches the server
