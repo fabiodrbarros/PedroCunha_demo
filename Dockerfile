@@ -7,6 +7,9 @@ FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat openssl
 WORKDIR /app
 COPY package.json package-lock.json* ./
+# Prisma schema is needed because `npm ci` runs the `prisma generate`
+# postinstall hook, which looks for prisma/schema.prisma.
+COPY prisma ./prisma
 RUN npm ci
 
 # 2. Builder
