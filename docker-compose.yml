@@ -27,10 +27,14 @@ services:
       DATABASE_URL: "file:/data/prod.db"
     ports:
       # host:container — 8081 is free on the server (8080 is capiarcos).
+      # Optional: only for local curl/debug; the tunnel reaches the
+      # container by name over the shared `web` network.
       - "8081:3000"
     volumes:
       - database:/data
       - uploads:/app/public/uploads
+    networks:
+      - web
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/pt"]
       interval: 30s
@@ -41,3 +45,9 @@ services:
 volumes:
   database:
   uploads:
+
+# Shared external network that the cloudflared tunnel sits on — the
+# Public Hostname in Cloudflare points at http://pedrocunha-demo:3000.
+networks:
+  web:
+    external: true
