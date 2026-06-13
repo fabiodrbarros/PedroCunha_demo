@@ -21,7 +21,7 @@ export default async function AdminProjectsPage() {
       <header className="mb-8 flex items-center justify-between">
         <h1 className="font-serif text-3xl font-light text-ink">{t("nav.projects")}</h1>
         <Link
-          href="/admin/projects/new"
+          href="/pc-guest-admin/projects/new"
           className="inline-flex h-11 items-center bg-ink px-6 text-sm text-paper-warm transition-colors hover:bg-ink-soft"
         >
           + {t("dashboard.quickProject")}

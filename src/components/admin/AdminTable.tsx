@@ -72,7 +72,7 @@ export function AdminTable({
             <tr key={row.id} className="group">
               <td className="px-5 py-4">
                 <Link
-                  href={`/admin/${type}/${row.id}`}
+                  href={`/pc-guest-admin/${type}/${row.id}`}
                   className="font-serif text-base font-light text-ink hover:underline"
                 >
                   {row.title}
@@ -110,7 +110,7 @@ export function AdminTable({
                     {row.published ? t("unpublish") : t("publish")}
                   </button>
                   <Link
-                    href={`/admin/${type}/${row.id}`}
+                    href={`/pc-guest-admin/${type}/${row.id}`}
                     className="uppercase tracking-widest text-ink-muted hover:text-ink"
                   >
                     {t("edit")}

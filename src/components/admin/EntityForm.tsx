@@ -85,7 +85,7 @@ export function EntityForm({
         const j = await res.json().catch(() => ({}));
         throw new Error(j.error ?? "Save failed");
       }
-      router.push(`/admin/${type}`);
+      router.push(`/pc-guest-admin/${type}`);
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Save failed");
@@ -218,7 +218,7 @@ export function EntityForm({
         </Button>
         <button
           type="button"
-          onClick={() => router.push(`/admin/${type}`)}
+          onClick={() => router.push(`/pc-guest-admin/${type}`)}
           className="text-sm text-ink-muted hover:text-ink"
         >
           {t("cancel")}

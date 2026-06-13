@@ -5,7 +5,7 @@ import { Monogram } from "@/components/brand/Monogram";
 
 export default async function LoginPage() {
   const session = await getSession();
-  if (session) redirect("/admin/dashboard");
+  if (session) redirect("/pc-guest-admin/dashboard");
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-paper-warm px-6">

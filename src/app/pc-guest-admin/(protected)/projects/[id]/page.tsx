@@ -27,7 +27,7 @@ export default async function EditProjectPage({
   return (
     <div>
       <Link
-        href="/admin/projects"
+        href="/pc-guest-admin/projects"
         className="text-[0.7rem] uppercase tracking-widest text-ink-muted hover:text-ink"
       >
         ← {t("cancel")}

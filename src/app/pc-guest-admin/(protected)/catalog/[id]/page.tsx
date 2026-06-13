@@ -27,7 +27,7 @@ export default async function EditCatalogPage({
   return (
     <div>
       <Link
-        href="/admin/catalog"
+        href="/pc-guest-admin/catalog"
         className="text-[0.7rem] uppercase tracking-widest text-ink-muted hover:text-ink"
       >
         ← {t("cancel")}

@@ -8,7 +8,7 @@ export default async function ProtectedLayout({
   children: React.ReactNode;
 }) {
   const session = await getSession();
-  if (!session) redirect("/admin/login");
+  if (!session) redirect("/pc-guest-admin/login");
 
   return (
     <div className="flex min-h-screen flex-col lg:flex-row">

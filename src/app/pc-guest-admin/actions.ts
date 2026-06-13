@@ -18,10 +18,10 @@ export async function login(_prev: LoginState, formData: FormData): Promise<Logi
   if (!ok) return { error: true };
 
   await createSession(parsed.data.username);
-  redirect("/admin/dashboard");
+  redirect("/pc-guest-admin/dashboard");
 }
 
 export async function logout() {
   await destroySession();
-  redirect("/admin/login");
+  redirect("/pc-guest-admin/login");
 }

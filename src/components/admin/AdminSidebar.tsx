@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Monogram } from "@/components/brand/Monogram";
-import { logout } from "@/app/admin/actions";
+import { logout } from "@/app/pc-guest-admin/actions";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { href: "/admin/dashboard", key: "dashboard" },
-  { href: "/admin/catalog", key: "catalog" },
-  { href: "/admin/projects", key: "projects" },
-  { href: "/admin/categories", key: "categories" },
+  { href: "/pc-guest-admin/dashboard", key: "dashboard" },
+  { href: "/pc-guest-admin/catalog", key: "catalog" },
+  { href: "/pc-guest-admin/projects", key: "projects" },
+  { href: "/pc-guest-admin/categories", key: "categories" },
 ];
 
 export function AdminSidebar({ username }: { username: string }) {

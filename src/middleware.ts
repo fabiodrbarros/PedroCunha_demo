@@ -5,6 +5,6 @@ export default createMiddleware(routing);
 
 export const config = {
   // Match all pathnames except those starting with:
-  // /api, /admin, /_next, /uploads, or containing a file extension.
-  matcher: ["/((?!api|admin|_next|_vercel|uploads|.*\\..*).*)"],
+  // /api, /pc-guest-admin, /_next, /uploads, or containing a file extension.
+  matcher: ["/((?!api|pc-guest-admin|_next|_vercel|uploads|.*\\..*).*)"],
 };

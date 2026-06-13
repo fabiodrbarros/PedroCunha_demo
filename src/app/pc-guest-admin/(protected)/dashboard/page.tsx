@@ -41,13 +41,13 @@ export default async function DashboardPage() {
 
       <div className="mt-8 flex flex-wrap gap-3">
         <Link
-          href="/admin/catalog/new"
+          href="/pc-guest-admin/catalog/new"
           className="inline-flex h-11 items-center bg-ink px-6 text-sm text-paper-warm transition-colors hover:bg-ink-soft"
         >
           + {t("quickCatalog")}
         </Link>
         <Link
-          href="/admin/projects/new"
+          href="/pc-guest-admin/projects/new"
           className="inline-flex h-11 items-center border border-ink/25 px-6 text-sm text-ink transition-colors hover:border-ink"
         >
           + {t("quickProject")}

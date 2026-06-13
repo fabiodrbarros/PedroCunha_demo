@@ -21,7 +21,7 @@ export default async function AdminCatalogPage() {
       <header className="mb-8 flex items-center justify-between">
         <h1 className="font-serif text-3xl font-light text-ink">{t("nav.catalog")}</h1>
         <Link
-          href="/admin/catalog/new"
+          href="/pc-guest-admin/catalog/new"
           className="inline-flex h-11 items-center bg-ink px-6 text-sm text-paper-warm transition-colors hover:bg-ink-soft"
         >
           + {t("dashboard.quickCatalog")}
