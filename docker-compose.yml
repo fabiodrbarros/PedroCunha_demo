@@ -2,9 +2,9 @@
 #  Pedro Cunha Carpintaria — Docker Compose
 #
 #  Single container + SQLite, persisted on the `database` volume.
-#  Secrets are loaded from `.env` via `env_file` (passed to the
-#  container literally — so the bcrypt hash uses normal "$",
-#  no "\$" or "$$" escaping needed).
+#  Secrets come from `.env` via ${VAR} interpolation.
+#  IMPORTANT: Compose interpolates the `.env`, so every "$" in the
+#  bcrypt ADMIN_PASSWORD_HASH must be DOUBLED to "$$" inside `.env`.
 # ─────────────────────────────────────────────────────────────
 
 services:
@@ -18,13 +18,14 @@ services:
     image: pedrocunha-demo:latest
     container_name: pedrocunha-demo
     restart: unless-stopped
-    # Runtime env (ADMIN_USERNAME / ADMIN_PASSWORD_HASH / SESSION_SECRET /
-    # NEXT_PUBLIC_SITE_URL) — values passed to the container as-is.
-    env_file:
-      - .env
     environment:
-      # Force the SQLite DB onto the persistent volume, regardless of .env.
+      # SQLite DB on the persistent volume.
       DATABASE_URL: "file:/data/prod.db"
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
+      # Remember: "$" doubled to "$$" in .env (e.g. $$2a$$12$$...).
+      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH}
+      SESSION_SECRET: ${SESSION_SECRET}
     ports:
       # host:container — 8081 is free on the server (8080 is capiarcos).
       # Optional: only for local curl/debug; the tunnel reaches the
