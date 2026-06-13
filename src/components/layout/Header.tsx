@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Monogram } from "@/components/brand/Monogram";
@@ -107,46 +106,33 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile menu overlay */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 flex flex-col bg-paper lg:hidden"
-          >
-            <div className="container flex flex-1 flex-col justify-center">
-              <Monogram className="mb-12 h-10 w-10 text-ink" />
-              <nav className="flex flex-col gap-2">
-                {NAV_LINKS.map((item, i) => (
-                  <motion.div
-                    key={item.href}
-                    initial={{ opacity: 0, y: 14 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 + i * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <Link
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className="font-serif text-4xl tracking-tight text-ink"
-                    >
-                      {t(item.key)}
-                    </Link>
-                  </motion.div>
-                ))}
-              </nav>
-            </div>
-            <div className="container flex items-center justify-between border-t border-stone-200 py-6">
-              <span className="text-[0.7rem] uppercase tracking-widest text-ink-muted">
-                {t("language")}
-              </span>
-              <LanguageSwitcher />
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Mobile menu overlay — solid background, CSS-animated (reliable on mobile) */}
+      {open && (
+        <div className="fixed inset-0 z-40 flex flex-col bg-paper lg:hidden">
+          <div className="container flex flex-1 flex-col justify-center">
+            <Monogram className="mb-12 h-10 w-10 text-ink" />
+            <nav className="flex flex-col gap-2">
+              {NAV_LINKS.map((item, i) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  style={{ animationDelay: `${60 + i * 55}ms` }}
+                  className="animate-fade-up font-serif text-4xl uppercase tracking-tight text-ink opacity-0"
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </nav>
+          </div>
+          <div className="container flex items-center justify-between border-t border-stone-200 py-6">
+            <span className="text-[0.7rem] uppercase tracking-widest text-ink-muted">
+              {t("language")}
+            </span>
+            <LanguageSwitcher />
+          </div>
+        </div>
+      )}
     </header>
   );
 }
