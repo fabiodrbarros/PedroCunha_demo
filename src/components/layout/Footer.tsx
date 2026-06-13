@@ -96,7 +96,7 @@ export function Footer() {
           >
             {t("footer.complaints")}
           </a>
-          <span>{t("contact.info.addressValue")}</span>
+          <span>{SITE.address.locality}, Portugal</span>
         </div>
       </div>
     </footer>
