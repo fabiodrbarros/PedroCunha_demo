@@ -118,7 +118,7 @@ export function Header() {
                   href={item.href}
                   onClick={() => setOpen(false)}
                   style={{ animationDelay: `${60 + i * 55}ms` }}
-                  className="animate-fade-up font-serif text-4xl uppercase tracking-tight text-ink opacity-0"
+                  className="animate-fade-up text-3xl uppercase tracking-widest text-ink opacity-0"
                 >
                   {t(item.key)}
                 </Link>
