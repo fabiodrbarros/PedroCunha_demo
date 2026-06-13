@@ -70,7 +70,15 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li className="text-white/45">{t("contact.info.addressValue")}</li>
+              <li className="text-white/45">
+                {t("contact.info.addressValue")
+                  .split(" · ")
+                  .map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+              </li>
             </ul>
           </div>
         </div>
