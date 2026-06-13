@@ -84,6 +84,8 @@ export default async function LocaleLayout({
     sameAs: SITE.socials.map((s) => s.href),
     address: {
       "@type": "PostalAddress",
+      streetAddress: SITE.address.street,
+      postalCode: SITE.address.postalCode,
       addressLocality: SITE.address.locality,
       addressRegion: SITE.address.region,
       addressCountry: SITE.address.country,

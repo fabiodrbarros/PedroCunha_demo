@@ -31,6 +31,7 @@ export function Header() {
   }, [open]);
 
   return (
+    <>
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-brand",
@@ -105,12 +106,13 @@ export function Header() {
           </span>
         </button>
       </div>
+    </header>
 
-      {/* Mobile menu overlay — solid background, CSS-animated (reliable on mobile) */}
+      {/* Mobile menu overlay — kept OUTSIDE <header> so the scrolled
+          backdrop-blur doesn't trap its fixed positioning. Solid bg. */}
       {open && (
         <div className="fixed inset-0 z-40 flex flex-col bg-paper lg:hidden">
           <div className="container flex flex-1 flex-col justify-center">
-            <Monogram className="mb-12 h-10 w-10 text-ink" />
             <nav className="flex flex-col gap-2">
               {NAV_LINKS.map((item, i) => (
                 <Link
@@ -133,6 +135,6 @@ export function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

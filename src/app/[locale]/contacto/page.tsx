@@ -25,9 +25,9 @@ export default async function ContactPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
 
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    `${SITE.address.locality}, Portugal`
-  )}`;
+  const fullAddress = `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.parish}, ${SITE.address.locality}, Portugal`;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
+  const mapEmbed = `https://maps.google.com/maps?q=${encodeURIComponent(fullAddress)}&z=15&output=embed`;
 
   return (
     <>
@@ -88,7 +88,7 @@ export default async function ContactPage({
             >
               <iframe
                 title={t("info.viewMap")}
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-8.600%2C41.758%2C-8.567%2C41.778&layer=mapnik&marker=41.7676%2C-8.5836"
+                src={mapEmbed}
                 className="pointer-events-none h-full w-full grayscale"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

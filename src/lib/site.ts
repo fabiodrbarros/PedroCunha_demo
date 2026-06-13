@@ -6,6 +6,9 @@ export const SITE = {
   phone: "+351 963 580 348",
   phoneRaw: "+351963580348",
   address: {
+    street: "Rua Cais do Rio Lima 499",
+    postalCode: "4990-641",
+    parish: "Gandra",
     locality: "Ponte de Lima",
     region: "Viana do Castelo",
     country: "PT",
